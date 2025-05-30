@@ -3,7 +3,6 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 
-
 from lib.model.author import Author
 from lib.model.magazine import Magazine
 from lib.model.article import Article

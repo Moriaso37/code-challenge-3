@@ -1,17 +1,17 @@
 import sys
 import os
 
-# Add the parent directory to the system path
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-# Import connection and models
+
 from lib.db.connection import get_connection
 from lib.model.author import Author
 from lib.model.magazine import Magazine
 from lib.model.article import Article
 
-# Optional: Get the database connection to ensure it's set up
-conn = get_connection()  # This will connect to the database when imported
+
+conn = get_connection()  
 
 if __name__ == "__main__":
     try:
